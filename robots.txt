@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aymnbs4ever-svg.github.io/ayman-picks/sitemap.xml
