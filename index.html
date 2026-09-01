@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>اختيارات أيمن | منتجات موصى بها من أمازون السعودية</title>
+<title>اختيارات البيت الذكي | منتجات موصى بها من أمازون السعودية</title>
 <meta name="description" content="منتجات مختارة بعناية من أمازون السعودية، تجربة واستخدام حقيقي قبل التوصية.">
 <link rel="canonical" href="https://aymnbs4ever-svg.github.io/ayman-picks/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aymnbs4ever-svg.github.io/ayman-picks/">
-<meta property="og:title" content="اختيارات أيمن | منتجات موصى بها من أمازون السعودية">
+<meta property="og:title" content="اختيارات البيت الذكي | منتجات موصى بها من أمازون السعودية">
 <meta property="og:description" content="منتجات مختارة بعناية من أمازون السعودية، تجربة واستخدام حقيقي قبل التوصية.">
 <meta property="og:image" content="https://m.media-amazon.com/images/I/411VuaxGFsL.jpg">
 <meta property="og:locale" content="ar_SA">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="اختيارات أيمن | منتجات موصى بها من أمازون السعودية">
+<meta name="twitter:title" content="اختيارات البيت الذكي | منتجات موصى بها من أمازون السعودية">
 <meta name="twitter:description" content="منتجات مختارة بعناية من أمازون السعودية، تجربة واستخدام حقيقي قبل التوصية.">
 <meta name="twitter:image" content="https://m.media-amazon.com/images/I/411VuaxGFsL.jpg">
 
@@ -76,21 +76,22 @@
   }
   @media (prefers-color-scheme: dark){
     :root{
-      --bg:#17140f;
-      --surface:#211d17;
-      --text:#f3ede3;
-      --text-muted:#a89e8d;
-      --border:#332c22;
-      --accent:#e2854a;
+      --bg:#151022;
+      --bg-glow: radial-gradient(1100px 560px at 50% -8%, #3a2456 0%, #1c1430 42%, #0f0b18 100%);
+      --surface:#211a34;
+      --text:#f5f0f7;
+      --text-muted:#b6a8cc;
+      --border:#3a2c52;
+      --accent:#f0954f;
       --accent-ink:#1c1204;
-      --accent-soft:#3a2a1c;
-      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 30px -12px rgba(0,0,0,0.5);
+      --accent-soft:#432a55;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 34px -12px rgba(0,0,0,0.65);
     }
   }
   *{box-sizing:border-box;}
   body{
     margin:0;
-    background:var(--bg);
+    background:var(--bg-glow, var(--bg));
     color:var(--text);
     font-family:'Tajawal','Cairo',sans-serif;
     line-height:1.7;
@@ -118,6 +119,20 @@
     color:var(--accent-ink);
     display:flex;align-items:center;justify-content:center;
     font-weight:800;font-size:1rem;
+  }
+  .brand-text{
+    background:linear-gradient(90deg, var(--accent) 0%, var(--text) 35%, var(--accent) 55%, var(--text) 85%, var(--accent) 100%);
+    background-size:250% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:brand-shine 6s linear infinite;
+  }
+  @keyframes brand-shine{
+    to{ background-position:-250% center; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .brand-text{ animation:none; color:var(--text); background:none; }
   }
   h1{
     font-family:'Cairo',sans-serif;
@@ -230,7 +245,7 @@
 <body>
 
 <header>
-  <span class="brand"><span class="brand-mark">أ</span>اختيارات أيمن</span>
+  <span class="brand"><span class="brand-mark">أ</span><span class="brand-text">اختيارات البيت الذكي</span></span>
   <h1>منتجات جربتها ونصحك فيها بصدق</h1>
   <p>مختارة يدويًا من أمازون السعودية — أدوات صغيرة تسهّل حياتك اليومية، بدون مبالغة وبدون منتجات ما تستاهل.</p>
 </header>
@@ -681,7 +696,7 @@
 </main>
 
 <footer>
-  <p>اختيارات أيمن © 2026 — قائمة تُحدَّث باستمرار بمنتجات جديدة.</p>
+  <p>اختيارات البيت الذكي © 2026 — قائمة تُحدَّث باستمرار بمنتجات جديدة.</p>
 </footer>
 
 </body>
